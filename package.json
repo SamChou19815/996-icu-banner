@@ -1,0 +1,36 @@
+{
+  "name": "@dev-sam/996-icu-banner",
+  "version": "0.1.0",
+  "description": "The banner for your personal website to show support for 996.icu.",
+  "keywords": [
+    "996",
+    "996-icu"
+  ],
+  "main": "dist/index.js",
+  "author": "Developer Sam",
+  "license": "Anti-996",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamChou19815/996-icu-banner.git"
+  },
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.12",
+    "@types/react-dom": "^16.8.3",
+    "typescript": "^3.4.1"
+  }
+}
