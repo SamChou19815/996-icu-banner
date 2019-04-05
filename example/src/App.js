@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Banner from '@dev-sam/996-icu-banner';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -9,9 +8,18 @@ class App extends Component {
       <div className="App">
         <Banner />
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <p>The banner is shown above.</p>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Edit&nbsp;
+            <a
+              className="App-link"
+              href="https://github.com/SamChou19815/996-icu-banner/tree/master/src/index.tsx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <code>src/index.tsx</code>
+            </a>
+            &nbsp;to contribute.
           </p>
           <a
             className="App-link"
@@ -19,7 +27,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Learn React to effectively contribute.
           </a>
         </header>
       </div>
