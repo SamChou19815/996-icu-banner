@@ -56,6 +56,9 @@ You can also check that directly in [`index.tsx`](./src/index.tsx).
 Each DOM element has a unique ID. You can directly style them using CSS or passing in `className` or
 `styles` props to style the top-level banner.
 
+In order to ensure that the `position: fixed` banner is visible, it's recommend to style it with
+`z-index: 996996`;
+
 ## Contribution
 
 You can contribute by:
