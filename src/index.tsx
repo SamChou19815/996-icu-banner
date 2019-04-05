@@ -24,24 +24,26 @@ const defaultTextStyles: CSSProperties = {
   margin: '0 1em'
 };
 
-type Props = {
+interface Props {
   readonly bannerPosition: 'top' | 'bottom';
   readonly lang: Languages;
   readonly className: string | undefined;
   readonly styles: CSSProperties | undefined;
-};
+}
 
 type State = { closed: boolean };
 
 export default class Banner extends Component<Props, State> {
   static defaultProps = {
     bannerPosition: 'top',
-    lang: 'en_US'
+    lang: 'en_US',
+    className: undefined,
+    styles: undefined
   };
 
   state = { closed: Boolean(localStorage.getItem('996-icu-banner-closed') || false) };
 
-  close = () =>
+  private close = () =>
     this.setState({ closed: true }, () => localStorage.setItem('996-icu-banner-closed', 'true'));
 
   render() {
