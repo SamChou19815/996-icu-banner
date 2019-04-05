@@ -12,6 +12,8 @@ const messages: I18nString = {
 const defaultBannerStyles: CSSProperties = {
   position: 'fixed',
   display: 'flex',
+  flexFlow: 'row',
+  flexWrap: 'wrap',
   alignContent: 'center',
   justifyContent: 'center',
   padding: '1em',
